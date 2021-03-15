@@ -1,4 +1,4 @@
-//: [Previous](@previous)
+//: [Binary Trees With Factors](https://leetcode.com/problems/binary-trees-with-factors/)
 
 import Foundation
 
@@ -28,12 +28,9 @@ class Solution {
 }
 
 let solution = Solution()
-solution.numFactoredBinaryTrees([2,4])
-solution.numFactoredBinaryTrees([2,4,5,10])
-solution.numFactoredBinaryTrees([18,3,6,2])
-solution.numFactoredBinaryTrees([18,31,2,4,14,7,9,63,10,84])
-
-// [18] [3] [6] [2] [18, 3, 6] [18, 6, 3] [6, 2, 3] [6, 3, 2]
-// [18, 3, 6, null, 2, 3] [18, 3, 6, null, 3, 2] [18, 6, 3, 2, 3] [18, 6, 3, 3, 2]
+solution.numFactoredBinaryTrees([2,4])                          //3
+solution.numFactoredBinaryTrees([2,4,5,10])                     //7
+solution.numFactoredBinaryTrees([18,3,6,2])                     //12
+solution.numFactoredBinaryTrees([18,31,2,4,14,7,9,63,10,84])    //17
 
 //: [Next](@next)

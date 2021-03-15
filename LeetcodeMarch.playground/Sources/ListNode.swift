@@ -1,6 +1,20 @@
 import Foundation
 
-public class ListNode {
+public class ListNode: CustomStringConvertible {
+    public var description: String {
+        var res: String = "["
+        var node: ListNode? = self
+        while node != nil {
+            res += "\(node?.val ?? 0)"
+            if node?.next != nil {
+            res += ", "
+            }
+            node = node?.next
+        }
+        res += "]"
+        return res
+    }
+
     public var val: Int
     public var next: ListNode?
     public init(_ val: Int) {
